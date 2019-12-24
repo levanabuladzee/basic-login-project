@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignupController">
+    <children>
+        <StackPane layoutX="184.0" layoutY="100.0" prefHeight="550.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <VBox prefHeight="200.0" prefWidth="100.0">
+                <children>
+                    <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2196f3;" />
+                    <Pane prefHeight="351.0" prefWidth="800.0" style="-fx-background-color: #EDE7F6;" />
+                </children>
+            </VBox>
+            <AnchorPane prefHeight="486.0" prefWidth="800.0" style="-fx-background-color: transparent;">
+                <children>
+                    <AnchorPane id="txt_gender" layoutX="166.0" layoutY="113.0" prefHeight="342.0" prefWidth="469.0" style="-fx-background-color: WHITE; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 4; -fx-border-radius: 4; -fx-padding: 8;">
+                        <children>
+                            <TextField fx:id="txt_user" layoutX="77.0" layoutY="50.0" maxWidth="316.0" minWidth="233.0" prefHeight="31.0" prefWidth="316.0" promptText="Username" />
+                            <PasswordField fx:id="txt_psw" layoutX="77.0" layoutY="110.0" maxWidth="316.0" minWidth="235.0" prefHeight="31.0" prefWidth="316.0" promptText="Password" />
+                            <TextField fx:id="txt_email" layoutX="77.0" layoutY="171.0" maxWidth="316.0" minWidth="233.0" prefHeight="31.0" prefWidth="316.0" promptText="Email" />
+                            <TextField fx:id="txt_gender" layoutX="77.0" layoutY="232.0" maxWidth="316.0" minWidth="150.0" prefHeight="19.0" prefWidth="150.0" promptText="Gender" />
+                            <TextField fx:id="txt_age" layoutX="327.0" layoutY="232.0" maxWidth="316.0" minWidth="66.0" prefHeight="25.0" prefWidth="66.0" promptText="Age" />
+                            <Button fx:id="btn_sign_up" layoutX="185.0" layoutY="289.0" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #f37e21;" text="Sign Up" textFill="WHITE" />
+                            <Button id="btn_back" fx:id="btn_back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="46.0" style="-fx-background-color: #f3212d;" text="Back" textFill="WHITE" />
+                        </children>
+                    </AnchorPane>
+                </children>
+            </AnchorPane>
+        </StackPane>
+    </children>
+
+</AnchorPane>

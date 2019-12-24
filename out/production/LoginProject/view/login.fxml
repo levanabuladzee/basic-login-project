@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="550.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <StackPane layoutX="184.0" layoutY="100.0" prefHeight="550.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <VBox prefHeight="200.0" prefWidth="100.0">
+            <children>
+               <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2196f3;" />
+               <Pane prefHeight="351.0" prefWidth="800.0" style="-fx-background-color: #EDE7F6;" />
+            </children>
+         </VBox>
+         <AnchorPane prefHeight="486.0" prefWidth="800.0" style="-fx-background-color: transparent;">
+            <children>
+               <AnchorPane layoutX="166.0" layoutY="113.0" prefHeight="342.0" prefWidth="469.0" style="-fx-background-color: WHITE; -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5); -fx-background-radius: 4; -fx-border-radius: 4; -fx-padding: 8;">
+                  <children>
+                     <ImageView fx:id="logo" fitHeight="84.0" fitWidth="149.0" layoutX="159.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                           <Image url="@../images/btu.png" />
+                        </image>
+                     </ImageView>
+                     <TextField fx:id="txt_user" layoutX="75.0" layoutY="147.0" maxWidth="316.0" minWidth="233.0" prefHeight="31.0" prefWidth="316.0" promptText="Enter Username" />
+                     <PasswordField fx:id="txt_psw" layoutX="75.0" layoutY="195.0" maxWidth="316.0" minWidth="235.0" prefHeight="31.0" prefWidth="316.0" promptText="Enter Password" />
+                     <CheckBox fx:id="checkbox_keep_me" layoutX="75.0" layoutY="244.0" prefHeight="31.0" prefWidth="171.0" text="Keep me logged in" />
+                     <Button fx:id="btn_login" layoutX="111.0" layoutY="286.0" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #2196f3;" text="Login" textFill="WHITE" />
+                     <Button fx:id="btn_sign_up" layoutX="246.0" layoutY="286.0" onAction="#handleButtonAction" prefHeight="32.0" prefWidth="100.0" style="-fx-background-color: #f37e21;" text="Sign Up" textFill="WHITE" />
+                  </children>
+               </AnchorPane>
+            </children>
+         </AnchorPane>
+      </StackPane>
+   </children>
+
+</AnchorPane>
